@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="automode.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class='card divResponsive'>
+    <div class="h-divider">
+      <div class="shadow"></div>
+    </div>
+    <div>
+      <table id="customers">
+        <tr>
+          <th>TIME</th>
+          <th>KEEP ON</th>
+          <th>KEEF OFF</th>
+          <th>FINAL BRIGHTNESS</th>
+        </tr>
+        <tr>
+          <td>
+            <style data="test" type="text/css"></style>
+            <div class="slidecontainerTemp">
+              <div id="value_labelTemp">
+                <input class="date_input" type="datetime-local">
+                <span><input class="date_input" type="datetime-local"></span>
+              </div>
+            </div>
+          </td>
+          <td>
+            <label class="switch">
+              <input type="checkbox" id="checkbox">
+              <span class="slider"></span>
+            </label>
+          </td>
+          <td>
+            <label class="switch">
+              <input type="checkbox" id="checkboxLC">
+              <span class="slider"></span>
+            </label>
+          </td>
+         
+          <td>
+            <style data="test" type="text/css"></style>
+            <div class="slidecontainer">
+              <div id="value_label">0</div>
+              <input type="range" min="0" max="100" step="1" value="0" class="slider_round" id="myRange">
+            </div>
+          </td>
+          <td><button class="button-3" role="button"><span class="navi" id="navi">Add</span></button></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <script>
+
+    let active = false
+
+    function toggle() {
+      let toggle = document.querySelector('.toggle')
+      let text = document.querySelector('.text')
+      active = !active
+
+      if (active) {
+        toggle.classList.add('active')
+        text.innerHTML = 'N'
+      } else {
+        toggle.classList.remove('active')
+        text.innerHTML = 'FF'
+      }
+    }
+
+
+  </script>
+</body>
+
+</html>

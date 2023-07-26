@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2&display=swap');
+
+table {
+    border-collapse: separate;
+    margin: 0 auto;
+    width: 80%;
+    font-family: Exo;
+}
+
+td {
+    border: 2px solid #7193a4;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 2%;
+    /*display: flex;
+    /* added this line / flex-direction: column; / added this line / align-items: center; / added this line / justify-content: center; / added this line */
+}
+
+td.title {
+    background-color: #0083e6;
+    color: white;
+    padding: 6px;
+    text-align: center;
+    
+}
+
+input[type="value"] {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+    flex-direction: inherit;
+}
+
+/* span.unit {
+    margin-left: 5px;
+    font-size: 60%;
+} */
+
+p.desc {
+    font-size: 50%;
+    margin-top: 5px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    table {
+        width: 100%;
+    }
+
+    td {
+        display: block;
+        width: auto;
+        border-left: none;
+        border-right: none;
+        text-align: left;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    td.title {
+        display: inline-block;
+        width: auto;
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    input[type="value"] {
+        width: auto;
+        margin-left: 0;
+        margin-right: 0;
+        display: inline-block;
+    }
+
+    span.unit {
+        display: inline-block;
+        margin-left: 0;
+        margin-right: 10px;
+    }
+
+}

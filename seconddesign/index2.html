@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/seconddesign/style2.css">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+            <tr>
+                <td class="title">PEOPLE IN</td>
+                <td class="title">VALUE</td>
+                <td class="title">PEOPLE OUT</td>
+                <td class="title">VALUE</td>S
+            </tr>
+        <tr>
+            <td>Switch On</td>
+            <td><input type="value" id=“turn-on-time” name=“turn-on-time” placeholder="seconds"><span class="unit"></span>
+                <p class="desc">*0 sec(s) by default.</p>
+            </td>
+            <td>Light ON</td>
+            <td><input type="value" id=“keep-on-time” name=“keep-on-time” placeholder="seconds"><span class="unit"></span>
+                <p class="desc">*The light stays on 100% after the first motion is detected for 120secs.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>Dim up</td>
+            <td><input type="value" id=“dime-up-time” name=“dime-up-time” placeholder="seconds"><span class="unit"></span>
+                <p class="desc">*0 sec(s) by default.</p>
+            </td>
+            <td>Dim down</td>
+            <td><input type="value" id=“dime-down-time” name=“dime-down-time” placeholder="seconds"><span class="unit"></span>
+                <p class="desc">*The light starts dimming down to 50% after no motion is detected after 60secs.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>Ambient Brightness</td>
+            <td><input type="value" id=“lux” name=“lux_brightness” placeholder="lux"><span class="unit"></span>
+                <p class="desc">*When ambient brightness is below this value, lights will.</p>
+            </td>
+            <td>Minimum Brightness</td>
+            <td><input type="value" id=“fl_brightness” name=“final_brightness” placeholder="%"><span class="unit"></span>
+                <p class="desc">*The minimum brightness level of 0%.</p>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

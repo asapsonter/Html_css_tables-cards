@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+</head>
+    <style>
+      body{
+        background-color: #dddddd
+      }
+        @import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+        table{
+          background: #dddddd;
+         
+        }
+  .sparkling-white {
+    margin: auto;
+    height: 80vh;
+    width: 80vw;
+    background-color: #dddddd;
+    border-radius: 1%;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Titillium Web' !important;
+  }
+  .column {
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 10px);
+  }
+  .column:first-child {
+    margin-right: 10px;
+  }
+  .title {
+    height: 50px;
+    background-color: #2196F3;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 20px;
+    border-bottom: 2px solid #0083e6;
+  }
+  .content {
+    height: calc(6 * 50px);
+    background-color: white;
+    /* background: linear-gradient(to bottom, white, aliceblue); */
+    padding:10px;
+    border:1px solid #dddddd;
+    margin-bottom:10px;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    font-size:24px;
+    color:#3b3838;
+    box-shadow: rgba(0,0,0,0.19) 0px 10px 20px, rgba(0,0,0,0.23) 0px 6px 6px;
+  }
+  
+   input{
+     width:15%;
+     margin-top:25px
+   }
+   
+   p{
+     font-size:calc(0.4 * 24px);
+     margin: 10px 10px
+   }
+</style>
+</head>
+<body>
+
+<div class="sparkling-white">
+        <div class="column">
+          <div class="title">People In</div>
+          <div class="content">
+            Dimming Up
+            <input type="value">
+            <p>*0 secs by default.</p>
+        </div>
+          <div class="content"> 
+            Preferred Ambient Lux
+            <input type="value">
+            <p>*By default, when ambient brightness is below this value, lights will go up.</p>
+        </div>
+        </div>
+        <div class="column">
+          <div class="title">People Out</div>
+          <div class="content">
+            Keep Running
+            <input type="value">
+            <p>*By default, the lights stays on 100% after the first motion is detected for 120secs</p>
+          </div>
+          <div class="content">
+            Dimming Down
+            <input type="value">
+            <p>*By default, the light starts dimming down to 50% after no motion is detected after 60secs.</p>
+        </div>
+          <div class="content">
+            Standby Brightness
+            <input type="value">
+            <p>*By default, the minimum brightness level of 0%</p>
+        </div>
+        </div>
+      </div>
+      
+</body>
+</html>

@@ -1,0 +1,70 @@
+/* Table background, border and width */
+table {
+    background-color: #ededed;
+    border-collapse: separate;
+    border-spacing: 5px;
+    width: auto;
+  }
+
+  /* Title cells background and text color */
+  th {
+    background-color: #0083e6;
+    color: white;
+  }
+
+  /* Main cells background and text color */
+  td {
+    background-color: white;
+    color: #999999;
+    /* Make the cells shiny and attractive */
+    box-shadow: inset 0px -15px 10px -15px rgba(0,0,0,0.4),
+     inset 15px 0px 10px -15px rgba(0,0,0,0.4),
+      inset -15px 0px 10px -15px rgba(0,0,0,0.4), 
+      inset 0px 15px 10px -15px rgba(0,0,0,0.4);
+      /* Add a border radius to the cells */
+    border-radius: 2%;
+  }
+
+  /* Main title margin and alignment */
+  h3 {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  /* Input value alignment and placeholder */
+  input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    /* Reduce the input box width by half */
+    width:20%;
+  }
+
+  input::placeholder {
+    content: "%";
+  }
+
+  /* Dummy text size and alignment */
+  p {
+    font-size: 70%;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  /* Align the table in the middle of the screen */
+  table {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Make the table responsive for tablets and PC/Laptop screens */
+  
+   @media screen and (max-width:1024px) {
+     /* Reduce the table width for smaller screens */
+     table {
+       width:60%;
+     }
+   }
