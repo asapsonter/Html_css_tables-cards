@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+body{
+    background-color: #999;
+    margin: 0;
+}
+.card {
+    font-weight: bold;
+    font-size: 30px;
+    color: #999;
+    width: 100%;
+    height: 100%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 2px;
+}
+
+.h-divider {
+    margin: auto;
+    width: 100%;
+    position: relative;
+}
+
+.h-divider .shadow {
+    overflow: hidden;
+    height: 20px;
+}
+
+.h-divider .shadow:after {
+    content: '';
+    display: block;
+    margin: -25px auto 0;
+    width: 100%;
+    height: 25px;
+    border-radius: 125px/12px;
+    box-shadow: 0 0 8px #0000003b;
+}
+
+#customers {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td, #customers th {
+    border: 1px solid #dddddd;
+    padding: 4px;
+    text-align: center;
+   /* border: hidden; remove hidden while debugging */
+   font-family: 'Titillium Web' !important;
+}
+
+#customers tr:nth-child(even){
+   background-color: transparent; 
+   border:hidden; 
+   font-family:'Titillium Web', sans-serif
+}
+
+/*#customers tr:hover {background-color:#073d56c7;}*/
+
+#customers th{
+   text-align:center;
+   font-size:12px;
+}
+
+/* main title*/
+#customers th.main_title{
+font-size: 20px;
+}
+
+.value_input {
+    width: 20%;
+    display: fle;
+    margin: auto ;
+    font-size: 15px;
+
+  }
+  .description{
+    font-size: 9px;
+    margin: inherit;
+  }
+
+  input[type=value]{
+    background: #ffffff;
+    border:solid 1px #0083e6;
+    border-radius: 5%;
+
+  }
+   
+  .slidecontainerTemp {
+      
+    margin: auto;
+     width: 100%; /* Width of the outside container */
+     /*margin-left: 5%;*/
+   
+   }
+  /*The slider itself */
+  .slider_round {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 65%; /* Full-width */
+    height: 5px; /* Specified height */
+    /*background: linear-gradient(to right, #d92525 50%, #31423399 50%);  Grey background */
+    background: linear-gradient(to right, #0371c5, #ffffff);
+    border-radius: 20px;
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+  .slider_round0Temp{
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    /* background:linear-gradient(to right, #d92525 50%, #31423399 50%);  Grey background */
+    background-image: linear-gradient(to right, green, yellow, orange, #2700ff);
+    border-radius: 5px;
+    background: linear-gradient(to right, #d92525 50%, #31423399 50%);
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+  
+  /* Mouse-over effects */
+  .slider0:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+  .slider_round0Temp:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+  /* The slider itself */
+  .c {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    border-radius: 5px;
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
+  .slider_round::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 15px; /* Set a specific slider handle width */
+    height: 15px; /* Slider handle height */
+    background:  white; /*#0083e6;  Green background */
+      border-radius: 50%;
+    cursor: pointer; /* Cursor on hover */
+    box-shadow: 0px 0px 15px black;
+  }
+  
+  .slider_round:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
+  .slider0::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: white; /* Green background */
+  
+    cursor: pointer; /* Cursor on hover */
+  }
+  .slider_round::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background:  #0083e6; /* Green background */
+    border-radius: 50%;
+    cursor: pointer; /* Cursor on hover */
+  }
+  .slider0::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: white; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+
+  .slidecontainer{
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  
+  

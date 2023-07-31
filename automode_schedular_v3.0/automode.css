@@ -45,7 +45,6 @@
   }
   
   #customers td, #customers th {
-    border: 1px solid #ddd;
     padding: 4px;
     text-align: center;
     border: 1px solid #dddddd;
@@ -53,7 +52,10 @@
     font-family: 'Titillium Web' !important;
   }
   
-  #customers tr:nth-child(even){background-color: transparent; border: hidden; font-family: 'Titillium Web' !important;}
+  #customers tr:nth-child(even){
+    background-color: transparent; 
+    border: hidden; 
+    font-family: 'Titillium Web' !important;}
   
   /* #customers tr:hover {background-color: #073d56c7;} */
   
@@ -529,8 +531,8 @@
   .value_input {
     width: 20%;
     display: block;
-    margin: 6px auto ;
-    font-size: 15px;
+    margin:  auto ;
+    font-size: 10px;
     
   }
 
