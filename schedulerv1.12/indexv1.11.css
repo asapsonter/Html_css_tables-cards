@@ -12,9 +12,11 @@ body{
     display: block;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    background-color: #FFFDFA;
     padding: 2px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 14px 28px, rgba(0, 0, 0, 0.25) 0px 10px 10px;
 }
+
 
 .h-divider {
     margin: auto;
@@ -46,7 +48,7 @@ body{
     border: 1px solid #dddddd;
     padding: 4px;
     text-align: center;
-   /* border: hidden; remove hidden while debugging */
+   border: hidden; /*  remove hidden while debugging */
    font-family: 'Titillium Web' !important;
 }
 
@@ -66,6 +68,7 @@ body{
 /* main title*/
 #customers th.main_title{
 font-size: 20px;
+color: #2196F3;
 }
 
 .value_input {
@@ -187,6 +190,13 @@ font-size: 20px;
     margin-left: 50px;
     margin-right: 50px;
   }
+
+  .divider td {
+    border-bottom: 3px solid #999999;
+    box-shadow: 0 -2px 2px -2px rgba(0, 0, 0, 0.2);
+  }
+
+  
 
   
   
