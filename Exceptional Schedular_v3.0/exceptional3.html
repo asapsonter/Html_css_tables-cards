@@ -15,19 +15,28 @@
     </div>
     <div>
       <table id="customers">
-        <tr>
-          <th>TIME</th>
-          <th>KEEP ON</th>
-          <th>KEEF OFF</th>
-          <th>FINAL BRIGHTNESS</th>
+        <tr class="mini_title">
+          <th>Range</th>
+          <th>Time</th>
+          <th>Keep On</th>
+          <th>Keep Off</th>
+          <th>Standby Brightness</th>
         </tr>
         <tr>
           <td>
-            <style data="test" type="text/css"></style>
+            
             <div class="slidecontainerTemp">
               <div id="value_labelTemp">
                 <input class="date_input" type="datetime-local">
                 <span><input class="date_input" type="datetime-local"></span>
+              </div>
+            </div>
+          </td>
+          <td>
+            
+            <div class="slidecontainerTemp">
+              <div id="value_labelTemp">
+                <h3>Cycle</h3>
               </div>
             </div>
           </td>
@@ -45,7 +54,7 @@
           </td>
          
           <td>
-            <style data="test" type="text/css"></style>
+            
             <div class="slidecontainer">
               <div id="value_label">0</div>
               <input type="range" min="0" max="100" step="1" value="0" class="slider_round" id="myRange">
