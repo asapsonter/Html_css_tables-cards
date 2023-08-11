@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900|Titillium+Web&display=swap');
+body{
+    background-color: #ddd;
+}
 .card4 {
     width: 100%;
     height: 100%;
@@ -6,8 +10,8 @@
     align-items: center;
     -webkit-font-smoothing: antialiased;
     justify-content: center;
-    background-color: #f9ffff;
-    font-family: 'Titillium Web' !important;
+    background-color: white;
+    font-family: 'Exo 2', sans-serif !important;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 14px 28px, rgba(0, 0, 0, 0.25) 0px 10px 10px;
 }
 
@@ -80,7 +84,7 @@ input[type=value4] {
 }
 .mini_title4:hover{
     color: #0083e6;
-    padding-top: 8px
+    
 }
 
 
@@ -92,77 +96,60 @@ input[type=value4] {
     text-align: right;
 } 
 
-.input_n_unit input,
-.input_n_unit small {
+.input_n_unit4 input,
+.input_n_unit4 small {
     margin: 0;
     padding: 0;
     margin-top: 10px;
     text-align: center;
 }
-#value_labelTemp4 {
-    text-align: center;
-    align-items: center;
-}
-.input_n_unit small{
+.input_n_unit4 small{
     color:  #0083e6;
     font-size: medium;
     
 }
+#value_labelTemp4 {
+    text-align: center;
+    align-items: center;
+}
+
 
 /*** exception styling********************/
 
 
-/* .h-divider {
-    margin: auto;
-    width: 100%;
-    position: relative;
-  }
-  
-  .h-divider .shadow {
-    overflow: hidden;
-    height: 20px;
-  }
-  
-  .h-divider .shadow:after {
-    content: '';
-    display: block;
-    margin: -25px auto 0;
-    width: 100%;
-    height: 25px;
-    border-radius: 125px/12px;
-    box-shadow: 0 0 8px #0000003b;
-  } */
-  
-  /* Divider */  
+ 
   .card {
-      font-weight: bold;
-      font-size: 30px;
-      color: #999999;
-      width: 100%;
+    width: 100%;
       height: 100%;
       display: block;
+      font-weight: bold;
+      color: #999999;
       margin-top: 30px;
-      align-items: center;
       -webkit-font-smoothing: antialiased;
-      justify-content: center;
-      background-color: #f9ffff;
-      font-family: 'Titillium Web' !important;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 14px 28px, rgba(0, 0, 0, 0.25) 0px 10px 10px;
+      background-color: white;
+      font-family: 'Exo 2', sans-serif !important;
+     box-shadow: rgba(0, 0, 0, 0.2) 0px 14px 28px, rgba(0, 0, 0, 0.25) 0px 10px 10px;
   }
 
    /* datetime input box */
    .date_input {
-    width: 70%;
+    width: 28%;
+    height: 22px;
     display: block;
     margin: 6px auto ;
+    border: solid 1px #0083e6;
+    border-radius: 5%;
+    background: #ffffff;
     
   }
+  
   /* #customers th {
     font-size: 15px;
     font-weight: 400;
     margin-top: 1px;
 
-    uncommey
+    uncomment and replace it with #customers td, #customers th to 
+    increase the height of the card
   } */
   
   #customers {
@@ -190,10 +177,7 @@ input[type=value4] {
   /* #customers tr:hover {background-color: #073d56c7;} */
   
   #customers th:hover {
-      
       color: #0083e6;
-      padding-top: 8px
-      
   }
   #customers th{
     padding-top: 16px;
@@ -332,7 +316,7 @@ input[type=value4] {
   
   #container {
     background-position: 50% 50%;
-    font-family: 'Titillium Web' !important;
+ 
    
   }
   
@@ -340,12 +324,10 @@ input[type=value4] {
       position: initial;
       top: 40px;
   }
+
+ 
   
-  .slidecontainer {   
-   margin: auto;
-    width: 100%; /* Width of the outside container */
-    /*margin-left: 5%;*/
-  }
+  
   
   /* The slider itself */
   .slider0 {
@@ -466,11 +448,7 @@ input[type=value4] {
       top: 40px;
   }
   
-  .slidecontainerTemp {
-   margin: auto;
-    width: 100%; /* Width of the outside container */
-    /*margin-left: 5%;*/
-  }
+ 
 
   .c {
     -webkit-appearance: none;  /* Override default CSS styles */
@@ -506,27 +484,51 @@ input[type=value4] {
     background: blue; /* Green background */
     cursor: pointer; /* Cursor on hover */
   }
-  
-  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
-  .slider_roundTemp::-webkit-slider-thumb {
-    -webkit-appearance: none; /* Override default look */
-    appearance: none;
-    width: 25px; /* Set a specific slider handle width */
-    height: 25px; /* Slider handle height */
-    background:  #0083e6; /* Green background */
-      border-radius: 50%;
-    cursor: pointer; /* Cursor on hover */
+
+
+.stanby_cell{
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 27px;
+    text-align: center;
+    align-items: center;
+    text-align: right;
+}
+
+input[type=value8] {
+    background: #ffffff;
+    border: solid 1px #0083e6;
+    border-radius: 5%;
+    width: 100%;
+    display: flex;
+    margin: auto;
+    font-size: 15px;
+  }
+
+  .input_n_unit input,
+  .input_n_unit small {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+  }
+  .input_n_unit small{
+      color:  #0083e6;
+      font-size: medium;
+      
+  }
+
+  select {
+    width: 50%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
   }
   
-  .slider_roundTemp::-moz-range-thumb {
-    width: 25px; /* Set a specific slider handle width */
-    height: 25px; /* Slider handle height */
-    background:  #0083e6; /* Green background */
-    border-radius: 50%;
-    cursor: pointer; /* Cursor on hover */
-  }
+
   
-  /* LC Auto Button =============*/
+ 
   
   
   

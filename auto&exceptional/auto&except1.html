@@ -23,22 +23,33 @@
                     <th></th>
                     <th></th>
                     <th></th>
+                    <th></th>
                 </tr>
                 <tr>
+                  <td>
+                    <div class="slidecontainerTemp4">
+                        <div id="value_labelTemp4">
+                               <span class="input_n_unit4"><input class="value_input4" type="value4" placeholder="">
+                                <small>sec</small>
+                            </span>
+                        </div>
+                        <h4 class="mini_title4">Devices</h4>
+                    </div>
+                </td>
                     <td>
                         <div class="slidecontainerTemp4">
                             <div id="value_labelTemp4">
-                                   <span class="input_n_unit"><input class="value_input4" type="value4" placeholder="">
+                                   <span class="input_n_unit4"><input class="value_input4" type="value4" placeholder="">
                                     <small>sec</small>
                                 </span>
                             </div>
                             <h4 class="mini_title4">Dimming Up</h4>
                         </div>
-                    </td>
+                    </td>                    
                     <td>
                         <div class="slidecontainerTemp4">
                             <div id="value_labelTemp4">
-                                <span class="input_n_unit"><input class="value_input4" type="value4" placeholder="">
+                                <span class="input_n_unit4"><input class="value_input4" type="value4" placeholder="">
                                     <small>lux</small>
                                 </span>
                             </div>  
@@ -48,7 +59,7 @@
                     <td>
                         <div class="slidecontainerTemp4">
                             <div id="value_labelTemp4">
-                                <span class="input_n_unit"><input class="value_input4" type="value4" placeholder="">
+                                <span class="input_n_unit4"><input class="value_input4" type="value4" placeholder="">
                                     <small>sec</small>
                                 </span>
                             </div> 
@@ -58,7 +69,7 @@
                     <td>
                         <div class="slidecontainerTemp4">
                             <div id="value_labelTemp4">
-                                <span class="input_n_unit"><input class="value_input4" type="value4" placeholder="">
+                                <span class="input_n_unit4"><input class="value_input4" type="value4" placeholder="">
                                     <small>sec</small>
                                 </span>
                             </div>
@@ -68,8 +79,8 @@
                     <td>
                         <div class="slidecontainerTemp4">
                             <div id="value_labelTemp4">
-                                <span class="input_n_unit"><input class="value_input4" type="value4" placeholder="">
-                                    <small>sec</small>
+                                <span class="input_n_unit4"><input class="value_input4" type="value4" placeholder="">
+                                    <small>%</small>
                                 </span>
                             </div>
                             <h4 class="mini_title4">Standby Brightness</h4>
@@ -88,14 +99,15 @@
               <table id="customers">
                 <tr class="mini_title">
                   <th>Range</th>
-                  <th>Time</th>
+                  <th>All Day</th>
+                  <th>Cycle</th>
                   <th>Keep On</th>
                   <th>Keep Off</th>
                   <th>Standby Brightness</th>
+                  <th></th>
                 </tr>
                 <tr>
                   <td>
-                    
                     <div class="slidecontainerTemp">
                       <div id="value_labelTemp">
                         <input class="date_input" type="datetime-local">
@@ -104,34 +116,50 @@
                     </div>
                   </td>
                   <td>
-                    
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                  </td>
+                  <td>
                     <div class="slidecontainerTemp">
                       <div id="value_labelTemp">
-                        <h3>Cycle</h3>
+                            <label for="interval"></label>
+                            <select id="interval" name="interval">
+                              <option value="everyday">Everyday</option>
+                              <option value="everyweek">Everyweek</option>
+                              <option value="everymonth">EveryMonth</option>
+                            </select>
                       </div>
                     </div>
                   </td>
                   <td>
                     <label class="switch">
-                      <input type="checkbox" id="checkbox">
+                      <input type="checkbox">
                       <span class="slider"></span>
                     </label>
                   </td>
                   <td>
                     <label class="switch">
-                      <input type="checkbox" id="checkboxLC">
+                      <input type="checkbox" >
                       <span class="slider"></span>
                     </label>
                   </td>
-                 
                   <td>
-                    
-                    <div class="slidecontainer">
-                      <div id="value_label">0</div>
-                      <input type="range" min="0" max="100" step="1" value="0" class="slider_round" id="myRange">
+                    <div class="stanby_cell">
+                        <span class="input_n_unit">
+                            <input class="" type="value8" placeholder="">
+                            <small>sec</small>
+                        </span>
                     </div>
                   </td>
-                  <td><button class="button-3" role="button"><span class="navi" id="navi">Add</span></button></td>
+                  <td>
+                    <div class="switch">
+                        <button class="button-3" role="button">
+                            <span class="navi" id="navi">Add</span>
+                        </button> 
+                    </div>
+                  </td>
                 </tr>
               </table>
             </div>
