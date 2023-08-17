@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,28 +8,76 @@
     <title>Document</title>
 
 </head>
+
 <body>
     <div class='card divResponsive'>
-        <div>
-            <table id="customers">
-                <tr class="mini_title">
-                    <th>Range</th>
-                    <th>All Day</th>
-                    <th>Cycle</th>
-                    <th>Keep On</th>
-                    <th>Keep Off</th>
-                    <th>Standby Brightness</th>
-                    <th></th>
-                </tr>
-                <tr>
-                    <div id="value_labelTemp">
-                        <input class="date_input" type="datetime-local">
-                        <span><input class="date_input" type="datetime-local"></span>
-                    </div>  
-                </tr>  
-            </table> 
+        <div class="h-divider">
+            <div class="shadow"></div>
         </div>
+        <table id="customers">
+            <tr>
+                <th>Range</th>
+                <th>All Day</th>
+                <th>Cycle</th>
+                <th>Keep On</th>
+                <th>Keep Off</th>
+                <th>Standby Brightness</th>
+            </tr>
+            <td>
+                <div id="value_labelTemp">
+                    <input class="date_input" type="datetime-local">
+                    <span>
+                        <input class="date_input" type="datetime-local">
+                    </span>
+                </div>
+            </td>
+            <td>
+                <label class="switch">
+                    <input type="checkbox" id="checkboxLC">
+                    <span class="slider"></span>
+                </label>
+            </td>
+            <td>
+                <form action="#">
+                    <!-- <label for="lang">Language</label> -->
+                    <select name="Timelimit" id="Timelimit" size="1.8">
+                      <option value="EveryWeek">EveryWeek</option>
+                      <option value="EveryMonth">EveryMonth</option>
+                      <option value="EveryYear">EveryYear</option>
+                    </select>
+              </form>
+            </td>
+            <td>
+                <label class="switch">
+                    <input type="checkbox" id="checkboxLC">
+                    <span class="slider"></span>
+                </label>
+            </td>
+            <td>
+                <label class="switch">
+                    <input type="checkbox" id="checkboxLC">
+                    <span class="slider"></span>
+                </label>
+            </td>
+            <td>
+                <div id="value_labelTemp4">
+                    <span class="input_n_unit6"><input class="value_input6" type="value6" placeholder="">
+                     <small>sec</small>
+                 </span>
+             </div>
+            </td>
 
-    </div> 
+            <td>
+                <div class="switch">
+                    <button class="button-3" role="button">
+                        <span class="navi" id="navi">Add</span>
+                    </button> 
+                </div>
+              </td>
+        </table>
+
+
+    </div>
 </body>
+
 </html>

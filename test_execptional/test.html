@@ -3,107 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
     <title>Document</title>
 </head>
-</head>
-    <style>
-      body{
-        background-color: #dddddd
-      }
-        @import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
-        table{
-          background: #dddddd;
-         
-        }
-  .sparkling-white {
-    margin: auto;
-    height: 80vh;
-    width: 80vw;
-    background-color: #dddddd;
-    border-radius: 1%;
-    display: flex;
-    flex-direction: row;
-    font-family: 'Titillium Web' !important;
-  }
-  .column {
-    display: flex;
-    flex-direction: column;
-    width: calc(50% - 10px);
-  }
-  .column:first-child {
-    margin-right: 10px;
-  }
-  .title {
-    height: 50px;
-    background-color: #2196F3;
-    text-align: center;
-    line-height: 50px;
-    color: white;
-    font-size: 20px;
-    border-bottom: 2px solid #0083e6;
-  }
-  .content {
-    height: calc(6 * 50px);
-    background-color: white;
-    /* background: linear-gradient(to bottom, white, aliceblue); */
-    padding:10px;
-    border:1px solid #dddddd;
-    margin-bottom:10px;
-    display:flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items:center;
-    font-size:24px;
-    color:#3b3838;
-    box-shadow: rgba(0,0,0,0.19) 0px 10px 20px, rgba(0,0,0,0.23) 0px 6px 6px;
-  }
-  
-   input{
-     width:15%;
-     margin-top:25px
-   }
-   
-   p{
-     font-size:calc(0.4 * 24px);
-     margin: 10px 10px
-   }
-</style>
-</head>
 <body>
+<main>
+<div class='card4 divResponsive'>
+  <table id="customers4">
+      <tr class="header_table4">
+          <th colspan="2" class="first_title4">Zone 1</th>
+      </tr>
+      <tr class="divider4">
+          <td class="shadow4" colspan="6"></td>
+      </tr>
+      <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+      </tr>
+      <tr>
+          <td>
+              <div class="slidecontainerTemp4">
+                  <div id="value_labelTemp4">
+                         <span class="input_n_unit4"><input class="value_input4" type="value4" placeholder="">
+                          <small>sec</small>
+                      </span>
+                  </div>
+                  <h4 class="mini_title4">Dimming Up</h4>
+              </div>
+          </td>                    
+          <td>
+              <div class="slidecontainerTemp4">
+                  <div id="value_labelTemp4">
+                      <span class="input_n_unit4"><input class="value_input4" type="value4" placeholder="">
+                          <small>lux</small>
+                      </span>
+                  </div>  
+                  <h4 class="mini_title4">Preferred Ambient Lux</h4>
+              </div>
+          </td>
+          <td>
+              <div class="slidecontainerTemp4">
+                  <div id="value_labelTemp4">
+                      <span class="input_n_unit4"><input class="value_input4" type="value4" placeholder="">
+                          <small>sec</small>
+                      </span>
+                  </div> 
+                  <h4 class="mini_title4">Keep Running</h4>
+              </div>
+          </td>
+          <td>
+              <div class="slidecontainerTemp4">
+                  <div id="value_labelTemp4">
+                      <span class="input_n_unit4"><input class="value_input4" type="value4" placeholder="">
+                          <small>sec</small>
+                      </span>
+                  </div>
+                  <h4 class="mini_title4">Dimming Down</h4>
+              </div>
+          </td>
+          <td>
+              <div class="slidecontainerTemp4">
+                  <div id="value_labelTemp4">
+                      <span class="input_n_unit4"><input class="value_input4" type="value4" placeholder="">
+                          <small>%</small>
+                      </span>
+                  </div>
+                  <h4 class="mini_title4">Standby Brightness</h4>
+              </div>
+          </td>
+          <td>
+              <div class="switch">
+                  <button class="button-3" role="button">
+                      <span class="navi" id="navi">Save</span>
+                  </button> 
+              </div>
+            </td>
+      </tr>
+  </table>
+</div>
 
-<div class="sparkling-white">
-        <div class="column">
-          <div class="title">People In</div>
-          <div class="content">
-            Dimming Up
-            <input type="value">
-            <p>*0 secs by default.</p>
-        </div>
-          <div class="content"> 
-            Preferred Ambient Lux
-            <input type="value">
-            <p>*By default, when ambient brightness is below this value, lights will go up.</p>
-        </div>
-        </div>
-        <div class="column">
-          <div class="title">People Out</div>
-          <div class="content">
-            Keep Running
-            <input type="value">
-            <p>*By default, the lights stays on 100% after the first motion is detected for 120secs</p>
-          </div>
-          <div class="content">
-            Dimming Down
-            <input type="value">
-            <p>*By default, the light starts dimming down to 50% after no motion is detected after 60secs.</p>
-        </div>
-          <div class="content">
-            Standby Brightness
-            <input type="value">
-            <p>*By default, the minimum brightness level of 0%</p>
-        </div>
-        </div>
-      </div>
-      
+<!---second divvvvvvvvvvvvvvvvvv for 
+another another change-->
+
+<div class='card6 divResponsive'>
+  <table id="customers6">
+      <tr class="header_table6">
+          <th colspan="2" class="first_title6">Zone 1</th>
+      </tr>
+      <tr class="divider6">
+          <td class="shadow6" colspan="6"></td>
+      </tr>
+      <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+      </tr>
+      <tr>
+          <td>
+              <div class="slidecontainerTemp6">
+                  <div id="value_labelTemp6">
+                    <p class="divider-text">----------</p>
+                         <span class="input_n_unit6">
+                          <input class="value_input6" type="value6" placeholder="">
+                          <small>sec</small>
+                      </span>
+                  </div>
+                  <h4 class="mini_title6">Dimming Up</h4>
+              </div>
+          </td>                    
+          <td>
+              <div class="slidecontainerTemp6">
+                <p class="divider-text">----------</p>
+                  <div id="value_labelTemp6">
+                      <span class="input_n_unit6"><input class="value_input6" type="value6" placeholder="">
+                          <small>lux</small>
+                      </span>
+                  </div>  
+                  <h4 class="mini_title6">Preferred Ambient Lux</h4>
+              </div>
+          </td>
+          <td>
+              <div class="slidecontainerTemp6">
+                <p class="divider-text">----------</p>
+                  <div id="value_labelTemp6">
+                      <span class="input_n_unit6"><input class="value_input6" type="value6" placeholder="">
+                          <small>sec</small>
+                      </span>
+                  </div> 
+                  <h4 class="mini_title6">Keep Running</h4>
+              </div>
+          </td>
+          <td>
+              <div class="slidecontainerTemp6">
+                <p class="divider-text">----------</p>
+                  <div id="value_labelTemp6">
+                      <span class="input_n_unit6"><input class="value_input6" type="value6" placeholder="">
+                          <small>sec</small>
+                      </span>
+                  </div>
+                  <h4 class="mini_title6">Dimming Down</h4>
+              </div>
+          </td>
+          <td>
+              <div class="slidecontainerTemp6">
+                <p class="divider-text">----------</p>
+                  <div id="value_labelTemp6">
+                      <span class="input_n_unit6"><input class="value_input6" type="value6" placeholder="">
+                          <small>%</small>
+                      </span>
+                  </div>
+                  <h4 class="mini_title6">Standby Brightness</h4>
+              </div>
+          </td>
+          <td>
+              <div class="switch">
+                  <button class="button-6" role="button">
+                      <span class="navi" id="navi">Save</span>
+                  </button> 
+              </div>
+            </td>
+      </tr>
+  </table>
+</div>
+<main/>
 </body>
 </html>
