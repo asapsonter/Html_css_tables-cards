@@ -122,11 +122,11 @@
           <div class="shadow"></div>
       </div>
       <table id="customers">
-          <tr>
+          <tr class="title_name">
               <th>Range</th>
               <th>All Day</th>
-              <th>Start Cycle</th>
-              <th>End Cycle</th>
+              <th>Recurrence </th>
+              <th>End Recurrence</th>
               <th>Keep On</th>
               <th>Keep Off</th>
               <th>Standby Brightness</th>
@@ -150,28 +150,21 @@
           </td>
           <td>
               <div class="slidecontainer">
-              <form action="#">
+                
+                <form action="#">
                   <!-- <label for="lang">Language</label> -->
                   <select name="Timelimit" id="Timelimit">
-                    <option value="EveryWeek">EveryDay</option>
-                    <option value="EveryWeek">EveryWeek</option>
-                    <option value="EveryMonth">EveryMonth</option>
-                    <option value="EveryYear">EveryYear</option>
+                    <option value="EveryWeek">Every Day</option>
+                    <option value="EveryWeek">Every Week</option>
+                    <option value="EveryMonth">Every Month</option>
+                    <option value="EveryYear">Every Year</option>
                   </select>
             </form>
             </div>
           </td>
           <td>
             <div class="slidecontainer">
-            <form action="#">
-                <!-- <label for="lang">Language</label> -->
-                <select name="Timelimit" id="Timelimit">
-                  <option value="EveryWeek">EveryDay</option>
-                  <option value="EveryWeek">EveryWeek</option>
-                  <option value="EveryMonth">EveryMonth</option>
-                  <option value="EveryYear">EveryYear</option>
-                </select>
-          </form>
+              <input class="date_input" type="month">
           </div>
         </td>
           <td>
